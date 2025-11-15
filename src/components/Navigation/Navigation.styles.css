@@ -1,0 +1,27 @@
+nav {
+    background-color: #333;
+    overflow: hidden;
+}
+
+ul {
+    max-width: 800px;
+    margin: 0 auto;
+    list-style-type: none;
+    padding: 0;
+    display: flex;
+    justify-content: space-around;
+
+    li {
+        a {
+            display: block;
+            color: white;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+
+            &:hover {
+                background-color: #111;
+            }
+        }
+    }
+}

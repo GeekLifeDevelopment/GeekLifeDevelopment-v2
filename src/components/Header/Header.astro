@@ -1,0 +1,21 @@
+---
+//lang='ts'
+import './Header.css';
+
+interface Props {
+    title?: string;
+    subtitle?: string;
+}
+
+const { 
+    title = 'Welcome to Geek Life', 
+    subtitle = 'You Farted'
+        } = Astro.props;
+---
+
+<div id="header-container">
+    <header>
+        <h1>{title}</h1>
+        <h2>{subtitle}</h2>
+    </header>
+</div>

@@ -1,3 +1,8 @@
+---
+import Header from '../components/Header/Header.astro';
+import Navigation from '../components/Navigation/Navigation.astro';
+---
+
 <!doctype html>
 <html lang="en">
 	<head>
@@ -8,7 +13,10 @@
 		<title>Astro Basics</title>
 	</head>
 	<body>
+		<Navigation />
+		<Header title="Beanns" subtitle="cheese"/>
 		<slot />
+		
 	</body>
 </html>
 
