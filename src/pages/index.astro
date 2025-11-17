@@ -2,51 +2,21 @@
 import Welcome from '../components/Welcome.astro';
 import Layout from '../layouts/Layout.astro';
 import Hero from '../assets/hero.png';
-import HeroLogo from '../assets/logo-stroke.png';	
+import HeroLogo from '../assets/logo-stroke.png';
+import '../pages/styles/index.css';
 
 // Welcome to Astro! Wondering what to do next? Check out the Astro documentation at https://docs.astro.build
 // Don't want to use any of this? Delete everything in this file, the `assets`, `components`, and `layouts` directories, and start fresh.
 ---
 
 <Layout>
+	<div id="container">
+		<main>
 	<img src={Hero.src} alt="Hero Background" id="background" />
 	<img id="hero-logo" src={HeroLogo.src} alt="Geek Life Development Logo" />
+		</main>
+	</div>
 
 </Layout>
 
-<style>
-	#background {
-		width: 100%;
-		height: auto;
-		max-height: 100vh;
-		object-fit: cover;
-		display: block;
-	}
 
-	/* Tablet and smaller screens */
-	@media (max-width: 768px) {
-		img {
-			height: 50vh;
-			max-height: 50vh;
-		}
-	}
-
-	/* Mobile screens */
-	@media (max-width: 480px) {
-		img {
-			height: 40vh;
-			max-height: 40vh;
-			object-position: center;
-		}
-	}
-
-	#hero-logo {
-		position: absolute;
-		top: 50%;
-		left: 50%;
-		transform: translate(-50%, -50%);
-		width: 60%;
-		height: auto;
-		max-width: 600px;
-	}
-</style>

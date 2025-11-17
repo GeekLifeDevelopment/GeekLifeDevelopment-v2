@@ -1,0 +1,34 @@
+#background {
+		width: 100%;
+		height: auto;
+		max-height: 100vh;
+		object-fit: cover;
+		display: block;
+	}
+
+	/* Tablet and smaller screens */
+	@media (max-width: 768px) {
+		img {
+			height: 50vh;
+			max-height: 50vh;
+		}
+	}
+
+	/* Mobile screens */
+	@media (max-width: 480px) {
+		img {
+			height: 40vh;
+			max-height: 40vh;
+			object-position: center;
+		}
+	}
+
+	#hero-logo {
+		position: absolute;
+		top: 50%;
+		left: 50%;
+		transform: translate(-50%, -50%);
+		width: 60%;
+		height: auto;
+		max-width: 600px;
+	}
